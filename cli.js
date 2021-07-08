@@ -19,10 +19,12 @@ const options = {
     port: 'p',
     connection: 'c',
     appname: 'a',
+    localhost: 'l',
     'message-only': 'm'
   },
   default: {
     appname: 'pino',
+    localhost: 'localhost',
     echo: true,
     host: 'localhost',
     port: '1234',

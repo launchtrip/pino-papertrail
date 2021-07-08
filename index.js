@@ -13,10 +13,10 @@ const defaultOptions = {
 }
 
 module.exports.createWriteStream = (opts) => {
-  const { appname, echo, host, port, connection, 'message-only': messageOnly } = { ...defaultOptions, ...opts }
+  const { appname, localhost, echo, host, port, connection, 'message-only': messageOnly } = { ...defaultOptions, ...opts }
 
   const parseJson = pinoPapertrail.parseJson()
-  const toSyslog = pinoPapertrail.toSyslog({ appname, 'message-only': messageOnly })
+  const toSyslog = pinoPapertrail.toSyslog({ appname, localhost, 'message-only': messageOnly })
   const papertrail = pinoPapertrail.toPapertrail({ echo, port, host, connection })
 
   return pumpify(parseJson, toSyslog, papertrail)

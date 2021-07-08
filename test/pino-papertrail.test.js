@@ -225,6 +225,7 @@ test('pino-papertrail api (udp)', (t) => {
 
   const options = {
     appname: 'pino-papertrail',
+    localhost: 'my-host',
     echo: false,
     host: 'papertrailapp.com',
     port: '1234',

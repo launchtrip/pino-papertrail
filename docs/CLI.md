@@ -23,6 +23,7 @@ You can pass the following options via cli arguments:
 | Display help information                                         | `-h`          | `--help`         |
 | Display version                                                  | `-v`          | `--version`      |
 | Application name (default: pino)                                 | `-a`          | `--appname`      |
+| Localhost name from where logs originate(default: localhost)     | `-h`          | `--appname`      |
 | Echo messages to the console (default: true)                     | `-e`          | `--echo`         |
 | Only send msg property as message to papertrail (default: false) | `-m`          | `--message-only` |
 | Papertrail destination address (default: localhost)              | `-H`          | `--host`         |
